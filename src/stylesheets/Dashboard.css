@@ -1,0 +1,135 @@
+/* Dashboard Container */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e3f2fd; /* Light mode base color */
+  overflow: hidden;
+  position: relative;
+}
+
+/* Animated Background */
+.dashboard-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(0, 120, 215, 0.3),
+    transparent
+  );
+  animation: animateBackground 8s infinite alternate ease-in-out;
+}
+
+/* Stripes on Left Side */
+.dashboard-stripes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 120px;
+  height: 100%;
+  background: repeating-linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.1) 10px,
+    transparent 10px,
+    transparent 20px
+  );
+  animation: moveStripes 6s linear infinite;
+}
+
+/* Stripes Animation */
+@keyframes moveStripes {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-20px);
+  }
+}
+
+/* Background Animation */
+@keyframes animateBackground {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+}
+
+/* Dashboard Title */
+.dashboard-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #003366;
+  margin-bottom: 40px;
+}
+
+/* Tab-like Buttons */
+.dashboard-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  height: 80px;
+  background-color: #0078d7;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+/* Hover Effects */
+.dashboard-btn:hover {
+  background-color: #005a9e;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Dark Mode */
+body[data-theme="dark"] .dashboard-container {
+  background-color: #121212;
+}
+
+body[data-theme="dark"] .dashboard-background {
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(0, 120, 215, 0.4),
+    transparent
+  );
+}
+
+/* Dark Mode Stripes (White) */
+body[data-theme="dark"] .dashboard-stripes {
+  background: repeating-linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.1) 10px,
+    transparent 10px,
+    transparent 20px
+  );
+}
+
+body[data-theme="dark"] .dashboard-title {
+  color: #e0e0e0;
+}
+
+body[data-theme="dark"] .dashboard-btn {
+  background-color: #4aa9ff;
+}
+
+body[data-theme="dark"] .dashboard-btn:hover {
+  background-color: #0078d7;
+}

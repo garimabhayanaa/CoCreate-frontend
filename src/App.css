@@ -1,0 +1,164 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+/* Light Theme */
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #0078d7;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.navbar a:hover {
+  opacity: 0.8;
+}
+
+/* Buttons */
+button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.primary-btn {
+  background-color: #0078d7;
+  color: white;
+}
+
+.primary-btn:hover {
+  background-color: #005a9e;
+}
+
+.secondary-btn {
+  background-color: #f8f8f8;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.secondary-btn:hover {
+  background-color: #e0e0e0;
+}
+
+/* Forms */
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: #0078d7;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 120, 215, 0.2);
+}
+
+/* Dashboard */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+.dashboard-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.dashboard-links {
+  display: flex;
+  gap: 20px;
+}
+
+/* Document Cards */
+.document-card {
+  background: white;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.document-card:hover {
+  transform: scale(1.02);
+}
+
+/* Theme Toggle Global Positioning */
+.theme-toggle-container {
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  z-index: 1000;
+}
+
+
+/* Dark Theme */
+body[data-theme="dark"] {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+body[data-theme="dark"] .navbar {
+  background-color: #222;
+}
+
+body[data-theme="dark"] .primary-btn {
+  background-color: #4aa9ff;
+}
+
+body[data-theme="dark"] .primary-btn:hover {
+  background-color: #0078d7;
+}
+
+body[data-theme="dark"] input, 
+body[data-theme="dark"] textarea {
+  background-color: #333;
+  color: #e0e0e0;
+  border-color: #555;
+}
+
+body[data-theme="dark"] .document-card {
+  background-color: #2a2a2a;
+  box-shadow: 0px 2px 6px rgba(255, 255, 255, 0.1);
+}
+
+body[data-theme="dark"] .document-card:hover {
+  transform: scale(1.02);
+}
+

@@ -1,0 +1,44 @@
+/* ✅ Theme Toggle Button */
+.theme-toggle-btn {
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--toggle-bg, #f0f0f0);
+  color: var(--toggle-text, #333);
+  border: none;
+  border-radius: 20px;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* ✅ Hover Effect */
+.theme-toggle-btn:hover {
+  background: var(--toggle-hover, #e0e0e0);
+}
+
+/* ✅ Icon Styling */
+.theme-icon {
+  font-size: 1.2rem;
+}
+
+/* ✅ Light Mode */
+body[data-theme="light"] {
+  --toggle-bg: #ffffff;
+  --toggle-text: #333;
+  --toggle-hover: #f0f0f0;
+}
+
+/* ✅ Dark Mode */
+body[data-theme="dark"] {
+  --toggle-bg: #333;
+  --toggle-text: #fff;
+  --toggle-hover: #444;
+}

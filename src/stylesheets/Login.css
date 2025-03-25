@@ -1,0 +1,100 @@
+/* Centering the login page */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Title */
+.login-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+  position: relative;
+  z-index: 10;
+}
+
+/* Google Sign-in Button */
+.login-btn {
+  background-color: #0078d7;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  z-index: 10;
+}
+
+.login-btn:hover {
+  background-color: #005a9e;
+}
+
+/* Google Icon */
+.login-btn img {
+  width: 20px;
+  height: 20px;
+}
+
+.background-animation {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.dot {
+    position: absolute;
+    width: 24px;  /* Doubled size */
+    height: 24px; /* Doubled size */
+    border-radius: 50%;
+    opacity: 0.6;
+    animation: floatAnimation 10s infinite linear alternate;
+}
+
+/* Different shades of blue */
+.dot:nth-child(3n) { background-color: #0078d7; }  /* Original Blue */
+.dot:nth-child(3n+1) { background-color: #339af0; } /* Lighter Blue */
+.dot:nth-child(3n+2) { background-color: #0056b3; } /* Darker Blue */
+
+/* Animating the dots to float around */
+@keyframes floatAnimation {
+  0% {
+    transform: translateY(0px) translateX(0px);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(-150px) translateX(70px);
+    opacity: 0.2;
+  }
+}
+
+/* Dark Mode */
+body[data-theme="dark"] .login-container {
+  background-color: #1e1e1e;
+}
+
+body[data-theme="dark"] .login-title {
+  color: #e0e0e0;
+}
+
+body[data-theme="dark"] .login-btn {
+  background-color: #4aa9ff;
+}
+
+body[data-theme="dark"] .login-btn:hover {
+  background-color: #0078d7;
+}
