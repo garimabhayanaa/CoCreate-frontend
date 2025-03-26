@@ -9,7 +9,7 @@ Backend: [CoCreate API (Render)](https://cocreate-el2b.onrender.com)
 ---
 
 ## 📂 Project Structure
-frontend/ 
+```frontend/ 
 │── src/ 
 │ ├── components/ # Reusable UI components (Chat, Editor, OnlineUsers, etc.) 
 │ ├── pages/ # App pages (Dashboard, Documents, Login, etc.) 
@@ -22,6 +22,7 @@ frontend/
 │── netlify.toml # Netlify deployment settings 
 │── package.json # Dependencies & scripts 
 └── README.md
+```
 
 ---
 
