@@ -3,9 +3,9 @@
 CoCreate is a **real-time collaborative document editor** that supports text, code, tables, and flowcharts. It enables multiple users to work together seamlessly with **live updates, AI assistance, and role-based permissions**.
 
 ## 🚀 Live Demo  
-Frontend: [CoCreate (Netlify)](https://cocreatecolab.netlify.app)  
-Backend: [CoCreate API (Render)](https://cocreate-el2b.onrender.com)
-Backend Repository: [CoCreate Backend](https://github.com/garimabhayanaa/CoCreate-backend)
+* Frontend: [CoCreate (Netlify)](https://cocreatecolab.netlify.app)  
+* Backend: [CoCreate API (Render)](https://cocreate-el2b.onrender.com)
+* Backend Repository: [CoCreate Backend](https://github.com/garimabhayanaa/CoCreate-backend)
 
 ---
 
