@@ -38,19 +38,19 @@ frontend/
 ### **3. Create a .env File**
 Create a .env file in the root directory and add:
 
-*REACT_APP_API_BASE_URL=https://cocreate-el2b.onrender.com
-*REACT_APP_FIREBASE_API_KEY=your_firebase_api_key
-*REACT_APP_FIREBASE_AUTH_DOMAIN=cocreate-ed5e1.firebaseapp.com
-*REACT_APP_FIREBASE_PROJECT_ID=cocreate-ed5e1
-*REACT_APP_FIREBASE_STORAGE_BUCKET=
-*REACT_APP_FIREBASE_MESSAGING_SENDER_ID=
-*REACT_APP_FIREBASE_APP_ID=
+* REACT_APP_API_BASE_URL=https://cocreate-el2b.onrender.com
+* REACT_APP_FIREBASE_API_KEY=your_firebase_api_key
+* REACT_APP_FIREBASE_AUTH_DOMAIN=cocreate-ed5e1.firebaseapp.com
+* REACT_APP_FIREBASE_PROJECT_ID=cocreate-ed5e1
+* REACT_APP_FIREBASE_STORAGE_BUCKET=
+* REACT_APP_FIREBASE_MESSAGING_SENDER_ID=
+* REACT_APP_FIREBASE_APP_ID=
 
 ### **4. Run Locally**
 ```sh
    npm start
 ```
-### **5.Deployment (Netlify)
+### **5.Deployment (Netlify)**
 Push changes to GitHub and Netlify will automatically deploy.
 To manually trigger a redeploy:
 ```sh
@@ -59,23 +59,23 @@ netlify deploy --prod
 ---
 
  ## Features
-*✅ Real-time collaboration using Socket.IO
-*✅ Supports text, code, tables, and flowcharts
-*✅ Role-based access (Owner, Editor, Viewer)
-*✅ Live AI assistance using Gemini API
-*✅ Upload & edit .txt, .csv, .md, .py, .js, .cpp, etc.
-*✅ Dark mode support
+* ✅ Real-time collaboration using Socket.IO
+* ✅ Supports text, code, tables, and flowcharts
+* ✅ Role-based access (Owner, Editor, Viewer)
+* ✅ Live AI assistance using Gemini API
+* ✅ Upload & edit .txt, .csv, .md, .py, .js, .cpp, etc.
+* ✅ Dark mode support
 
  ## Tech Stack
-*Frontend: React, TailwindCSS
+* Frontend: React, TailwindCSS
 
-*Backend: Node.js, Express, MongoDB
+* Backend: Node.js, Express, MongoDB
 
-*Real-time: Socket.IO
+* Real-time: Socket.IO
 
-*Auth: Firebase
+* Auth: Firebase
 
-*Deployment: Netlify (Frontend), Render (Backend)
+* Deployment: Netlify (Frontend), Render (Backend)
 
 ## License
 This project is open-source under the MIT License.
