@@ -8,23 +8,23 @@ CoCreate is a real-time collaborative document editor designed to reduce frictio
 Collaborative document tools often struggle to balance real-time responsiveness, permission clarity, and ease of use, especially when multiple users with different roles interact with the same document.
 
 Early observations showed that users frequently faced:
-*1. Confusion over editing rights*
-*2. Accidental overwrites during simultaneous edits*
-*3. Poor visibility into who was online or making changes*
-*4. Friction when switching between content types (text, code, tables)*
+*1. Confusion over editing rights
+*2. Accidental overwrites during simultaneous edits
+*3. Poor visibility into who was online or making changes
+*4. Friction when switching between content types (text, code, tables)
 
 The goal was to design a system that enabled smooth collaboration without sacrificing control or clarity.
 
 ## Users & Assumptions
 
 ### Primary users
-*1. Small teams or groups working on shared documents*
-*2. Users collaborating remotely and asynchronously*
+*1. Small teams or groups working on shared documents
+*2. Users collaborating remotely and asynchronously
 
 ### Initial assumptions
-*1. Users value live updates over strict consistency*
-*2. Clear role definitions reduce editing conflicts*
-*3. Real-time visibility of collaborators improves coordination*
+*1. Users value live updates over strict consistency
+*2. Clear role definitions reduce editing conflicts
+*3. Real-time visibility of collaborators improves coordination
 These assumptions influenced early design choices around permissions, synchronization, and UI layout.
 
 ## Solution & Key Decisions
@@ -45,11 +45,11 @@ AI suggestions were integrated contextually rather than as a separate tool to mi
 
 ### 5. Tradeoffs & Constraints
 Several conscious tradeoffs were made during development:
-*1. Latency vs consistency*
+*1. Latency vs consistency
 Real-time updates were favored over strict consistency guarantees to maintain responsiveness during collaboration.
-*2. Permission clarity vs speed of access*
+*2. Permission clarity vs speed of access
 Role checks added complexity but were necessary to prevent misuse and confusion.
-*3. Feature breadth vs reliability*
+*3. Feature breadth vs reliability
 The scope was limited to core collaboration features to ensure stability under concurrent usage.
 
 These decisions were revisited multiple times during development as edge cases surfaced.
@@ -57,27 +57,27 @@ These decisions were revisited multiple times during development as edge cases s
 ## Iteration & Feedback
 
 Through internal testing and trial usage:
-*1. Permission flows were refined to reduce ambiguity*
-*2. UI components were adjusted to make active collaborators more visible*
-*3. Change tracking was added to improve transparency around document edits*
-*4. Testing with multiple concurrent users helped uncover synchronization issues and informed improvements to reliability and user experience.*
+*1. Permission flows were refined to reduce ambiguity
+*2. UI components were adjusted to make active collaborators more visible
+*3. Change tracking was added to improve transparency around document edits
+*4. Testing with multiple concurrent users helped uncover synchronization issues and informed improvements to reliability and user experience.
 
 ## Success Signals
 
 While not a production-scale product, CoCreate demonstrated:
-*1. Stable collaboration with multiple simultaneous users*
-*2. Reduced edit conflicts due to explicit roles*
-*3. Improved clarity around document ownership and activity*
-*4. A reusable architecture for real-time collaborative tools*
+*1. Stable collaboration with multiple simultaneous users
+*2. Reduced edit conflicts due to explicit roles
+*3. Improved clarity around document ownership and activity
+*4. A reusable architecture for real-time collaborative tools
 
 ## Improvements
 
 Given more time or real-world usage:
 
-*1. Add granular version history and rollback*
-*2. Improve conflict resolution for edge cases*
-*3. Introduce usage analytics to validate assumptions with data*
-*4. Explore finer-grained permissions for larger teams*
+*1. Add granular version history and rollback
+*2. Improve conflict resolution for edge cases
+*3. Introduce usage analytics to validate assumptions with data
+*4. Explore finer-grained permissions for larger teams
 
 # CoCreate Frontend
 
